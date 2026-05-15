@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<header>
+    <h1>Lista de pedidos</h1>
+</header>
+<body>
+    <form action="/pedido" method="post">
+    <!--Hay que agregar un form para para que los archivos js funcionen-->
+    <p>Nombre Cliente: <input type="text" name="nombre"></p>
+    <p>Tamaño de la pizza: <label for=""></label></p>
+    <input type="radio" name="tamaño" value="Chica"> <label for="">Chica</label>
+    <input type="radio" name="tamaño" value="Mediana"> <label for="">Mediana</label>
+    <input type="radio" name="tamaño" value="Grande"> <label for="">Grande</label>
+    <p>Ingredientes: </p>
+    <input type="checkbox" name="Ingredientes"> <label for="">Jamon</label>
+    <input type="checkbox" name="Ingredientes"> <label for="">Queso extra</label>
+    <input type="checkbox" name="Ingredientes"> <label for="">Champiñones</label>
+    <input type="checkbox" name="Ingredientes"> <label for="">Aceitunas</label>
+    <input type="checkbox" name="Ingredientes"> <label for="">Cebolla</label>
+    <input type="checkbox" name="Ingredientes"> <label for="">Pimentón</label>
+    <input type="checkbox" name="Ingredientes"> <label for="">Tocino</label>
+    <p>Cantidad: <input type="number" name="Cantidad" required></p>
+    <button type="submit">subir pedido</button>
+    <!--Sigue haciendo el otro archivo html creando la tabla yo termino la principal-->
+    </form>
+    
+    <a href="/controller/pedidocontroller/lista">Ver lita pedidos</a>
+</body>
+</html>
